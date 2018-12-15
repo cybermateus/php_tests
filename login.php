@@ -26,7 +26,7 @@ $conn = new crud;
 
 if (isset($_POST['login'])){
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = $_POST['password']; // there is no password security set whatsoever, this is purely for testing purposes
     
     $sql = " SELECT * FROM users WHERE username='$username' AND password='$password' ";
     $conn->run_query($sql);
