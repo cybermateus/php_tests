@@ -3,6 +3,8 @@
 and enables us to run sql querys with run_query($sql) 
 or if we need to get result use get_row($sql)*/
 
+<?php
+
 class crud{
 
   private $dbhost = "localhost";
@@ -20,7 +22,7 @@ class crud{
   if (!$conn){
     die("connection failed");
   }
-  
+  }
   public function run_query ($sql){
     $this->connect();
     $this->result = $this->conn->query($sql);
@@ -33,3 +35,4 @@ class crud{
   }
   
 }
+?>
