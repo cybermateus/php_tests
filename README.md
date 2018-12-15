@@ -1,2 +1,4 @@
 # php_tests
-testing php in github
+
+
+Setting database as "test" and table "users" with username/password //this is purely fictional for testing purposes
