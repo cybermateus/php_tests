@@ -1,3 +1,6 @@
+
+<h2> main page </h2>
+
 <?php
 
 session_start();
