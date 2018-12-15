@@ -6,15 +6,16 @@ or if we need to get result use get_row($sql)*/
 class crud{
 
   private $dbhost = "localhost";
-  private $dbname = "root";
+  private $dbuser = "root";
   private $dbpass = "";
-  
+  private $dbname = "test";  
+
   private $conn;
   public $result;
   public $row;
   
   private function connect(){
-    $this->conn = new mysqli($this->dbhost, $this->dbname, $this->dbpass);
+    $this->conn = new mysqli($this->dbhost, $this->dbuser, $this->dbpass, $this->dbname);
   
   if (!$conn){
     die("connection failed");
